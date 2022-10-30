@@ -165,6 +165,7 @@
                       <small>Forgot Password?</small>
                     </a> --}}
                   </div>
+                  
                   <div class="input-group input-group-merge">
                     <input
                     
@@ -228,13 +229,13 @@
     <script src="{{ asset('dashboard-template/assets/vendor/js/bootstrap.js') }}"></script>
     <script src="{{ asset('dashboard-template/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 
-    <script src="../assets/vendor/js/menu.js"></script>
+    <script src="{{ asset('dashboard-template/assets/vendor/js/menu.js') }}"></script>
     <!-- endbuild -->
 
     <!-- Vendors JS -->
 
     <!-- Main JS -->
-    <script src="../assets/js/main.js"></script>
+    <script src="{{ asset('dashboard-template/assets/js/main.js') }}"></script>
 
     <!-- Page JS -->
 
