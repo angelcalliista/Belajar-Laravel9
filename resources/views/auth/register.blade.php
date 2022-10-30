@@ -130,6 +130,7 @@
 
               <form action="{{ route('register') }}" method="POST" id="formAuthentication" class="mb-3" >
                 @csrf
+                <input type="hidden" name="level" value="user">
                 <div class="mb-3">
                     <label for="username" class="form-label">Name</label>
                     <input

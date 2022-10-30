@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DashboardController;
  
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,12 @@ Route::get('/', function () {
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // });
-Route::resource('/dashboard', AdminController::class)->middleware(['auth', 'verified']);
+
+Route::group(['middleware'=> ['admin']], function(){
+    Route::resource('/dashboard', DashboardController::class)->middleware(['auth', 'verified']);
+
+
+});
 
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
